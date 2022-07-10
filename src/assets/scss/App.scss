@@ -1,0 +1,17 @@
+.counter {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  max-width: 30%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem auto 0;
+  button {
+    border-radius: 10px;
+    outline: 1px solid #02643e;
+    font-size: 2rem;
+  }
+  span {
+    text-align: center;
+    font-size: 2rem;
+  }
+}

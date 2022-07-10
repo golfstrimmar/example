@@ -1,0 +1,43 @@
+@import './null.scss';
+@import './buttons.scss';
+
+:root {
+  --red: #cf2020;
+  --blue: #4164ff;
+  --green: #46e21f;
+  --coral: coral;
+  --success: #4bf559;
+  --success-light: #99faa1;
+  --success-dark: #03a510;
+}
+
+/* 
+var(--red); 
+*/
+
+
+
+
+
+* {
+  /* outline: 1px solid green; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  color: #000000;
+  background: gainsboro;
+}
+
+.container {
+  outline: 1px solid var(--red); 
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}

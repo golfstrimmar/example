@@ -1,0 +1,124 @@
+.btn {
+  border: 1px solid transparent;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn--success {
+  background: var(--success);
+  min-height: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.btn--success:hover {
+  background: var(--success-light);
+  border: 1px solid var(--success-dark);
+  box-shadow: inset 0px 0px 20px var(--success-dark)!important;
+  color: var(--success-dark);
+}
+
+/* .btn--success:focus {
+  border: 1px solid #2b2b63;
+  background: #d6a6f7;
+  box-shadow: 0px 0px 20px white !important;
+  color: white;
+} */
+
+.btn--light svg {
+  width: 20px;
+  height: 20px;
+  fill: chocolate;
+}
+
+.btn--light:hover svg {
+  fill: var(--red); 
+}
+
+.btn--empty {
+  background: white;
+  border: 1px solid var(--red); 
+}
+
+.btn--empty:hover {
+  background: #9999ff;
+  border: 1px solid #0000cc;
+  box-shadow: 0px 0px 20px white !important;
+  color: white;
+}
+
+.btn--empty:focus {
+  border: 1px solid #0000cc;
+  background: #3333ff;
+  box-shadow: 0px 0px 20px white !important;
+  color: white;
+}
+
+.btn--light:hover,
+.btn--cross:hover {
+  background: #9999ff;
+  border: 1px solid #0000cc;
+  box-shadow: 0px 0px 20px white !important;
+  color: white;
+}
+
+.btn--light:focus,
+.btn--cross:focus {
+  border: 1px solid #0000cc;
+  background: #3333ff;
+  box-shadow: 0px 0px 20px white !important;
+  color: white;
+}
+
+.btn--success-icon {
+  min-width: 300px;
+  height: 40px;
+  background: rgb(12, 185, 133);
+  border: 3px solid rgb(12, 185, 133);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn--success-icon svg,
+.btn--success-icon span{
+  color: white;
+  fill: white;
+}
+
+
+.but-wave {
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.addDiv {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  animation: pulse .5s ease-in-out;
+  transform: scale(0);
+  position: absolute;
+  background-color: rgb(12, 2, 105);
+}
+
+
+@keyframes pulse {
+  to{
+    transform: scale(2);
+    background: white;
+    opacity: 0;
+  }
+  
+}
+
+
+
